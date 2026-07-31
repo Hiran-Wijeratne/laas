@@ -142,7 +142,7 @@ export default function ContactSection() {
         {/* Fields sit in a narrower centred column so each underline rule
             stays a reasonable length instead of stretching the full width
             of the wide card. */}
-        <form className="mx-auto mt-8 max-w-2xl space-y-5">
+        <form className="mx-auto mt-14 max-w-xl space-y-5">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             <Field label="Name" />
             <Field label="Email" type="email" />
@@ -174,15 +174,6 @@ export default function ContactSection() {
             </button>
           </div>
         </form>
-
-        {/* Contact details — plain text below the form, per the copy draft. */}
-        <div className="mt-6 text-center text-xs text-zinc-600">
-          <p>
-            100 Victoria Street, #B2-01, National Library Building, Singapore
-            188064
-          </p>
-          <p className="mt-2">+65 6635 8142 · enquiry@laas.com.sg</p>
-        </div>
       </div>
     </section>
   );

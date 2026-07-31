@@ -25,18 +25,13 @@ export default function WhoWeAre() {
             and overseas organisations.
           </p>
 
-          <p className="mt-4 text-sm text-zinc-700 sm:text-base">
-            LAAS also has a team of highly qualified
-            <br />
-            librarians and staff who run and operate libraries
-            <br />
-            for its clients. Information does not add much
-            <br />
-            value if they are not discoverable. LAAS employs
-            <br />
-            innovative use of technologies to make information searchable
-            <br />
-            and discoverable across different formats.
+          <p className="mt-4 max-w-[440px] text-sm text-zinc-700 sm:text-base">
+            LAAS also has a team of highly qualified librarians
+            and staff who run and operate libraries for its
+            clients. Information does not add much value if
+            they are not discoverable. LAAS employs innovative use
+            of technologies to make information searchable and
+            discoverable across different formats.
           </p>
         </div>
 
