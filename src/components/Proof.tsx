@@ -29,7 +29,7 @@ const CASES = [
 
 export default function Proof() {
   return (
-    <section className="bg-white px-6 py-16 sm:px-10 sm:py-20">
+    <section className="bg-brand-blue-tint px-6 py-16 sm:px-10 sm:py-20">
       <div className="mx-auto max-w-7xl text-center">
         <h2
           className="text-2xl leading-tight font-semibold text-zinc-900 sm:text-3xl lg:text-4xl"
