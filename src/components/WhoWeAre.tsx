@@ -53,15 +53,6 @@ export default function WhoWeAre() {
             </div>
           </div>
 
-          <div className="mt-6 flex flex-wrap gap-3">
-            <span className="rounded-full border border-brand-blue/20 bg-white px-4 py-1.5 text-xs font-medium text-brand-blue">
-              Wholly-owned by NLB
-            </span>
-            <span className="rounded-full border border-brand-blue/20 bg-white px-4 py-1.5 text-xs font-medium text-brand-blue">
-              Since 2000
-            </span>
-          </div>
-
           <a
             href="#"
             className="mt-8 inline-block text-sm font-semibold text-brand-blue hover:underline"

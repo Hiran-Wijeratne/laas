@@ -44,10 +44,11 @@ export default function WhatWeDo() {
     <section id="what-we-do" className="bg-white px-6 pt-16 pb-16 sm:px-10 sm:pt-20 sm:pb-20">
       <div className="mx-auto max-w-7xl">
         <h2
-          className="mx-auto max-w-2xl text-center text-2xl leading-tight font-semibold text-zinc-900 sm:text-3xl lg:text-4xl"
+          className="mx-auto max-w-2xl text-center text-2xl leading-tight font-semibold sm:text-3xl lg:text-4xl"
           style={{ fontFamily: "var(--font-heading)" }}
         >
-          Build. Run. Improve. All in One Place.
+          <span className="block text-zinc-900">Build. Run. Improve.</span>
+          <span className="block text-brand-blue">All in One Place.</span>
         </h2>
 
         {/* Four pillar tiles — back to the taller cards, each with the
@@ -81,8 +82,8 @@ export default function WhatWeDo() {
                 <p className="mt-2 text-xs text-zinc-600">
                   {pillar.supporting}
                 </p>
-                <span className="mt-3 inline-block text-xs font-semibold text-brand-blue underline underline-offset-2">
-                  Learn More
+                <span className="mt-3 inline-block text-sm font-semibold text-brand-blue underline underline-offset-2">
+                  Learn More →
                 </span>
               </div>
             </a>

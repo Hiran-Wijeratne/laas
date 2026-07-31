@@ -79,9 +79,9 @@ export default function Innovations() {
                 </p>
                 <a
                   href={product.href}
-                  className="mt-4 inline-block text-sm font-semibold text-brand-orange hover:underline"
+                  className="mt-4 inline-block text-sm font-semibold text-brand-blue hover:underline"
                 >
-                  Read More
+                  Read More →
                 </a>
               </div>
             </div>

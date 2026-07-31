@@ -38,17 +38,18 @@ export default function Proof() {
     <section className="bg-brand-blue-tint px-6 py-16 sm:px-10 sm:py-20">
       <div className="mx-auto max-w-7xl text-center">
         <h2
-          className="text-2xl leading-tight font-semibold text-zinc-900 sm:text-3xl lg:text-4xl"
+          className="text-2xl leading-tight font-semibold sm:text-3xl lg:text-4xl"
           style={{ fontFamily: "var(--font-heading)" }}
         >
-          Real Organisations. Real Results.
+          <span className="block text-zinc-900">Real Organisations.</span>
+          <span className="block text-brand-blue">Real Results.</span>
         </h2>
 
         <div className="mt-10 grid grid-cols-1 gap-6 text-left sm:grid-cols-3">
           {CASES.map((item) => (
             <div
               key={item.org}
-              className="overflow-hidden rounded-xl border border-zinc-200 shadow-sm"
+              className="overflow-hidden rounded-lg border border-zinc-200 shadow-sm"
             >
               <div className="relative h-48 w-full">
                 <Image
