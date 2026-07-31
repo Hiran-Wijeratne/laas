@@ -19,7 +19,7 @@ const CASES = [
   },
   {
     org: "Records Management Consultancy",
-    logo: null,
+    logo: "/case-records-logo.png",
     image: "/case-records.jpg",
     summary:
       "Government agencies and statutory boards rely on LAAS's methodology to build file plans their staff can actually use.",

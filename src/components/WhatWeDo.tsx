@@ -41,7 +41,7 @@ const PILLARS = [
 
 export default function WhatWeDo() {
   return (
-    <section id="what-we-do" className="bg-white px-6 pt-10 pb-16 sm:px-10 sm:pt-14 sm:pb-20">
+    <section id="what-we-do" className="bg-white px-6 pt-16 pb-16 sm:px-10 sm:pt-20 sm:pb-20">
       <div className="mx-auto max-w-7xl">
         <h2
           className="mx-auto max-w-2xl text-center text-2xl leading-tight font-semibold text-zinc-900 sm:text-3xl lg:text-4xl"
@@ -65,28 +65,23 @@ export default function WhatWeDo() {
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              {/* No dark wash over the photo itself — only a bottom-anchored
-                  gradient, just tall enough to keep the text legible, so
-                  the image stays fully visible everywhere else. */}
-              <div
-                className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-zinc-900/80 via-zinc-900/30 to-transparent"
-                aria-hidden
-              />
-
-              <div className="absolute inset-x-0 bottom-0 p-5">
+              {/* No dark overlay/shadow on the photo at all — a light,
+                  near-opaque panel sits behind the text instead, so the
+                  image itself stays untouched above it. */}
+              <div className="absolute inset-x-0 bottom-0 bg-white/85 p-5">
                 <p
-                  className="text-2xl leading-tight font-semibold text-white sm:text-3xl"
+                  className="text-2xl leading-tight font-semibold text-zinc-900 sm:text-3xl"
                   style={{ fontFamily: "var(--font-heading)" }}
                 >
                   {pillar.title}
                 </p>
-                <p className="mt-2 text-sm font-medium text-white/90">
+                <p className="mt-2 text-sm font-medium text-zinc-800">
                   {pillar.outcome}
                 </p>
-                <p className="mt-2 text-xs text-white/80">
+                <p className="mt-2 text-xs text-zinc-600">
                   {pillar.supporting}
                 </p>
-                <span className="mt-3 inline-block text-xs font-semibold text-white underline underline-offset-2">
+                <span className="mt-3 inline-block text-xs font-semibold text-brand-blue underline underline-offset-2">
                   Learn More
                 </span>
               </div>

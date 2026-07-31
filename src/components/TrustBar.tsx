@@ -36,7 +36,7 @@ export default function TrustBar() {
                 {stat.unit}
               </span>
             </p>
-            <p className="mt-1 text-[10px] leading-tight text-zinc-600 sm:text-xs lg:text-sm">
+            <p className="mt-1 text-xs leading-tight text-zinc-600 sm:text-sm">
               {stat.label}
             </p>
           </div>
