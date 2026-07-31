@@ -10,6 +10,25 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /*
+   * Söhne is a commercial typeface (Klim Type Foundry) — no font files are
+   * bundled here since that requires a purchased webfont license. This
+   * token references it by name with a close-matching system fallback, so
+   * dropping in a licensed @font-face (or next/font/local pointed at real
+   * .woff2 files) is a one-line swap with no template changes needed.
+   */
+  --font-heading: "Söhne", "Söhne Fallback", ui-sans-serif, -apple-system,
+    "Helvetica Neue", Arial, sans-serif;
+
+  /* LAAS brand palette */
+  --color-brand-blue: #0047bb;
+  --color-brand-orange: #ff8200;
+  --color-brand-red: #e80029;
+
+  /* Almost-white wash of the primary blue (~5% tint) — the muted
+     "startup grey" section background, not the visible 20% swatch. */
+  --color-brand-blue-tint: #f2f6fc;
 }
 
 @media (prefers-color-scheme: dark) {
