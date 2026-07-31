@@ -41,7 +41,7 @@ const PILLARS = [
 
 export default function WhatWeDo() {
   return (
-    <section id="what-we-do" className="bg-white px-6 pt-2 pb-16 sm:px-10 sm:pt-4 sm:pb-20">
+    <section id="what-we-do" className="bg-white px-6 pt-10 pb-16 sm:px-10 sm:pt-14 sm:pb-20">
       <div className="mx-auto max-w-7xl">
         <h2
           className="mx-auto max-w-2xl text-center text-2xl leading-tight font-semibold text-zinc-900 sm:text-3xl lg:text-4xl"
