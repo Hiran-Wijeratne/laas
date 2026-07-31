@@ -1,48 +1,16 @@
-"use client";
-
 import Image from "next/image";
-import { useEffect, useState } from "react";
-
-// hero-2 is the most prominent image — it's shown first and held on
-// screen roughly twice as long as hero-1 on every rotation.
-const HERO_IMAGES = [
-  {
-    src: "/hero-2.png",
-    alt: "Bright, modern library atrium with open shelving, reading nooks, and plants",
-    durationMs: 9000,
-  },
-  {
-    src: "/hero-1.png",
-    alt: "Bright, modern multi-level library interior with open shelving and reading areas",
-    durationMs: 4500,
-  },
-];
 
 export default function Hero() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const id = setTimeout(() => {
-      setActiveIndex((current) => (current + 1) % HERO_IMAGES.length);
-    }, HERO_IMAGES[activeIndex].durationMs);
-    return () => clearTimeout(id);
-  }, [activeIndex]);
-
   return (
     <section className="relative isolate flex min-h-screen items-start overflow-hidden">
-      {/* Background photos — stacked and crossfaded, taking turns. */}
-      {HERO_IMAGES.map((image, index) => (
-        <Image
-          key={image.src}
-          src={image.src}
-          alt={image.alt}
-          fill
-          priority
-          className={`object-cover transition-opacity duration-1000 ease-in-out ${
-            index === activeIndex ? "opacity-100" : "opacity-0"
-          }`}
-        />
-      ))}
+      {/* Background photo — single static image now, no rotation. */}
+      <Image
+        src="/hero.png"
+        alt="Bright, modern building with wavy architecture and glass detailing"
+        fill
+        priority
+        className="object-cover"
+      />
 
       {/* Whitish overlay over the whole background photo */}
       <div className="absolute inset-0 bg-white/30" aria-hidden />
