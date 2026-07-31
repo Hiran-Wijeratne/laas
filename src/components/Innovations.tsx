@@ -33,23 +33,22 @@ const PRODUCTS = [
 
 export default function Innovations() {
   return (
-    <section className="bg-brand-blue-tint px-6 pt-16 pb-20 sm:px-10 sm:pt-20 sm:pb-24">
+    <section className="bg-brand-blue-tint px-6 py-16 sm:px-10 sm:py-20">
       <div className="mx-auto max-w-7xl text-center">
-        {/* Two-tone heading, matching the live site's bold-then-light
-            weight contrast, recoloured for the light background. */}
-        <h2 style={{ fontFamily: "var(--font-heading)" }}>
-          <span className="block text-2xl font-bold text-zinc-900 sm:text-3xl lg:text-4xl">
-            Innovations for
-          </span>
-          <span className="block text-3xl font-light text-brand-blue sm:text-4xl lg:text-5xl">
-            Libraries
+        <h2
+          className="text-2xl leading-tight font-semibold sm:text-3xl lg:text-4xl"
+          style={{ fontFamily: "var(--font-heading)" }}
+        >
+          <span className="block text-zinc-900">Technology Proven Inside</span>
+          <span className="block text-brand-blue">
+            Singapore&rsquo;s Own Libraries First.
           </span>
         </h2>
 
         {/* White floating cards on the light blue wash, image on top,
             title and description below — matching the live site's actual
             Innovations for Libraries layout. */}
-        <div className="mt-12 grid grid-cols-1 gap-6 text-left sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-1 gap-6 text-left sm:grid-cols-2 lg:grid-cols-4">
           {PRODUCTS.map((product) => (
             <div
               key={product.title}

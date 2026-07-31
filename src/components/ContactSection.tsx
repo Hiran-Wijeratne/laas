@@ -138,7 +138,7 @@ export default function ContactSection() {
           </span>
           <span className="block text-brand-blue">Knowledge Easy to Find.</span>
         </h2>
-        <p className="mx-auto mt-4 max-w-md text-center text-sm text-zinc-600">
+        <p className="mx-auto mt-4 max-w-md text-center text-sm text-zinc-600 sm:text-base">
           Planning, compliance, operations, or technology — tell us what
           you&rsquo;re trying to solve.
         </p>

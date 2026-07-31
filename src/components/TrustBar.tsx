@@ -19,7 +19,7 @@ const STATS = [
 
 export default function TrustBar() {
   return (
-    <section className="bg-white px-4 py-8 sm:px-10 sm:py-10">
+    <section className="bg-white px-6 py-8 sm:px-10 sm:py-10">
       <div className="mx-auto grid max-w-7xl grid-cols-4 gap-2 sm:gap-6">
         {STATS.map((stat, index) => (
           <div

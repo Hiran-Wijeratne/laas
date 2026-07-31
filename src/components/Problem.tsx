@@ -1,6 +1,6 @@
 export default function Problem() {
   return (
-    <section className="mx-auto flex max-w-4xl flex-col items-center justify-center px-6 pt-14 pb-4 text-center sm:px-10 sm:pt-16 sm:pb-6">
+    <section className="mx-auto flex max-w-4xl flex-col items-center justify-center px-6 pt-14 pb-14 text-center sm:px-10 sm:pt-16 sm:pb-16">
       {/* Headline: now carries the big idea directly, since the hero no
           longer states it (kicker line was removed). Same two-line,
           colour-split structure as the hero, same heading font token,

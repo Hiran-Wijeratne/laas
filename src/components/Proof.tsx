@@ -58,7 +58,7 @@ export default function Proof() {
                   className="object-cover"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-5">
                 {/* Logo area — same height on every card. All three now
                     have a real logo, so the redundant plain-text org
                     name label underneath has been removed. */}

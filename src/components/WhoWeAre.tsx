@@ -14,7 +14,7 @@ export default function WhoWeAre() {
             <span className="text-brand-blue">The Source of It.</span>
           </h2>
 
-          <p className="mt-5 text-base text-zinc-700">
+          <p className="mt-5 text-sm text-zinc-700 sm:text-base">
             Every organisation can benefit from the expertise behind
             Singapore&rsquo;s National Library Board. That&rsquo;s why LAAS
             exists — as NLB&rsquo;s own corporate arm, sharing its proven
@@ -23,7 +23,7 @@ export default function WhoWeAre() {
             the real thing.
           </p>
 
-          <p className="mt-4 text-base text-zinc-700">
+          <p className="mt-4 text-sm text-zinc-700 sm:text-base">
             NLB runs a network of 28 libraries across Singapore — plus the
             National Library and the National Archives of Singapore —
             lending more than 38.8 million items a year. It&rsquo;s a scale
