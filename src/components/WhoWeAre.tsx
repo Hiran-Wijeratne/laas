@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WhoWeAre() {
   return (
-    <section className="bg-white px-6 py-16 sm:px-10 sm:py-20">
+    <section className="bg-brand-blue-tint px-6 py-16 sm:px-10 sm:py-20">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
         {/* Text side — visitor stays the subject in the opening line. */}
         <div>
@@ -54,10 +54,10 @@ export default function WhoWeAre() {
           </div>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <span className="rounded-full border border-brand-blue/20 bg-brand-blue-tint px-4 py-1.5 text-xs font-medium text-brand-blue">
+            <span className="rounded-full border border-brand-blue/20 bg-white px-4 py-1.5 text-xs font-medium text-brand-blue">
               Wholly-owned by NLB
             </span>
-            <span className="rounded-full border border-brand-blue/20 bg-brand-blue-tint px-4 py-1.5 text-xs font-medium text-brand-blue">
+            <span className="rounded-full border border-brand-blue/20 bg-white px-4 py-1.5 text-xs font-medium text-brand-blue">
               Since 2000
             </span>
           </div>
