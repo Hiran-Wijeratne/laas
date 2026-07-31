@@ -1,17 +1,13 @@
 import Image from "next/image";
 
 const NAV_LINKS = [
-  { label: "Services/Products", href: "#what-we-do" },
-  { label: "Projects", href: "#projects" },
-  { label: "Partners", href: "#partners" },
-  { label: "Training / Courses", href: "#training" },
-  { label: "Join", href: "#join" },
-];
-
-const ABOUT_LINKS = [
-  { label: "About Us", href: "#about" },
-  { label: "Board Members", href: "#board-members" },
-  { label: "Our Team", href: "#our-team" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "#about" },
+  { label: "Consultancy", href: "#what-we-do" },
+  { label: "Training", href: "#what-we-do" },
+  { label: "Managed Services", href: "#what-we-do" },
+  { label: "Project", href: "#projects" },
+  { label: "Careers", href: "#careers" },
 ];
 
 export default function Header() {
@@ -30,31 +26,10 @@ export default function Header() {
         </a>
 
         {/* Nav */}
-        <nav className="hidden items-center gap-8 lg:flex">
-          {/* About (dropdown) */}
-          <div className="group relative">
-            <button className="flex items-center gap-1 text-sm font-medium text-zinc-800 hover:text-brand-blue">
-              About
-            </button>
-            <div className="invisible absolute top-full left-1/2 z-30 w-48 -translate-x-1/2 pt-3 opacity-0 transition-all group-hover:visible group-hover:opacity-100">
-              <ul className="rounded-xl border border-zinc-100 bg-white py-2 shadow-lg">
-                {ABOUT_LINKS.map((link) => (
-                  <li key={link.href}>
-                    <a
-                      href={link.href}
-                      className="block px-4 py-2 text-sm text-zinc-700 hover:bg-zinc-50 hover:text-brand-blue"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
+        <nav className="hidden items-center gap-7 lg:flex">
           {NAV_LINKS.map((link) => (
             <a
-              key={link.href}
+              key={link.label}
               href={link.href}
               className="text-sm font-medium text-zinc-800 hover:text-brand-blue"
             >
@@ -63,12 +38,12 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Contact CTA — same style as the hero's primary CTA */}
+        {/* Contact Us CTA — same style as the hero's primary CTA */}
         <a
           href="#contact"
           className="rounded-lg bg-brand-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand-orange/90"
         >
-          Contact
+          Contact Us
         </a>
       </div>
     </header>

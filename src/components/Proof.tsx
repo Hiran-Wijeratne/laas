@@ -4,7 +4,7 @@ const CASES = [
   {
     org: "Republic Polytechnic",
     logo: "/case-rp.png",
-    image: "/product-onlinebrowsing.jpg",
+    image: "/case-rp-photo.jpg",
     summary:
       "LAAS took over daily library operations — increasing utilisation and enriching students' learning journeys.",
     note: "Testimonial to be sourced from RP.",
@@ -12,7 +12,7 @@ const CASES = [
   {
     org: "Temasek Polytechnic",
     logo: "/case-tp.png",
-    image: "/product-stocktracking.jpg",
+    image: "/case-tp-photo.jpg",
     summary:
       "A robotics solution now automatically finds missing and mis-shelved books across TP's entire collection.",
     note: "Testimonial to be sourced from TP.",
@@ -81,6 +81,28 @@ export default function Proof() {
         >
           See All Projects →
         </a>
+
+        {/* Required attribution: the Temasek Polytechnic photo is
+            CC BY-SA 4.0 and requires credit. The Republic Polytechnic
+            photo is public domain, so no credit is legally required
+            for it. */}
+        <p className="mt-6 text-xs text-zinc-400">
+          Temasek Polytechnic photo by{" "}
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Temasek_Polytechnic_Main_Gate.JPG"
+            className="underline hover:text-zinc-600"
+          >
+            Deoma12
+          </a>
+          , licensed under{" "}
+          <a
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+            className="underline hover:text-zinc-600"
+          >
+            CC BY-SA 4.0
+          </a>
+          .
+        </p>
       </div>
     </section>
   );
