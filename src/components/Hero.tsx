@@ -40,7 +40,7 @@ export default function Hero() {
           </h1>
 
           {/* Subhead */}
-          <p className="mx-auto mt-4 max-w-xl text-sm text-zinc-700">
+          <p className="mx-auto mt-4 max-w-xl text-lg text-zinc-700">
             LAAS brings the expertise and technology behind Singapore&rsquo;s
             National Library Board to your library, archive, or records
             challenge.

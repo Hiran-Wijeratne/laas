@@ -50,12 +50,10 @@ export default function Innovations() {
             title and description below — matching the live site's actual
             Innovations for Libraries layout. */}
         <div className="mt-12 grid grid-cols-1 gap-6 text-left sm:grid-cols-2 lg:grid-cols-4">
-          {PRODUCTS.map((product, index) => (
+          {PRODUCTS.map((product) => (
             <div
               key={product.title}
-              className={`flex flex-col overflow-hidden rounded-lg bg-white shadow-sm ${
-                index % 2 === 0 ? "lg:-translate-y-6" : "lg:translate-y-6"
-              }`}
+              className="flex flex-col overflow-hidden rounded-lg bg-white shadow-sm"
             >
               <a href={product.href} className="relative block h-64 w-full">
                 <Image
