@@ -57,9 +57,9 @@ export default function Proof() {
                   <Image
                     src={item.logo}
                     alt={item.org}
-                    width={90}
-                    height={30}
-                    className="h-8 w-auto object-contain"
+                    width={360}
+                    height={120}
+                    className="h-32 w-auto object-contain"
                   />
                 ) : (
                   <p className="text-sm font-semibold text-brand-blue">

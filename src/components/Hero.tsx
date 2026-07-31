@@ -15,15 +15,10 @@ export default function Hero() {
       {/* Whitish overlay over the whole background photo */}
       <div className="absolute inset-0 bg-white/30" aria-hidden />
 
-      {/* Pill: anchored to the bottom-left corner of the hero section */}
-      <span className="absolute bottom-6 left-6 z-10 inline-flex items-center justify-center rounded-full border border-brand-blue/20 bg-white/40 px-4 py-1.5 text-xs font-medium text-brand-blue sm:bottom-8 sm:left-10">
-        LAAS · An NLB Company · Est. 2000
-      </span>
-
       {/* Text sits directly on the photo, centered, no card/scrim behind it,
-          positioned in the upper portion of the viewport (not dead-center) —
-          matching reference/hero reference.png's layout. */}
-      <div className="relative mx-auto w-full max-w-7xl -translate-y-[30px] px-6 pt-36 text-center sm:px-10 sm:pt-44">
+          near the top of the viewport per team feedback (pill removed,
+          top space shortened). */}
+      <div className="relative mx-auto w-full max-w-7xl px-6 pt-24 text-center sm:px-10 sm:pt-28">
         <div className="relative mx-auto max-w-3xl">
           {/* Almost-transparent white wash directly behind the text, just
               enough to lift legibility without reading as a visible card. */}

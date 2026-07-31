@@ -12,8 +12,8 @@ const NAV_LINKS = [
 
 export default function Header() {
   return (
-    <header className="absolute inset-x-0 top-4 z-20 px-4 sm:top-6 sm:px-6">
-      <div className="mx-auto flex max-w-7xl items-center justify-between rounded-lg bg-white px-6 py-3 shadow-md">
+    <header className="absolute inset-x-0 top-0 z-20 bg-white px-6 py-3 shadow-md sm:px-10">
+      <div className="mx-auto flex max-w-7xl items-center justify-between">
         {/* Logo */}
         <a href="/" className="shrink-0">
           <Image
