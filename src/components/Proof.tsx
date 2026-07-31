@@ -53,27 +53,18 @@ export default function Proof() {
                 />
               </div>
               <div className="p-6">
-                {/* Logo area — same height on every card, blank when
-                    there's no logo, so the org-name text below always
-                    starts from the same position. */}
+                {/* Logo area — same height on every card. All three now
+                    have a real logo, so the redundant plain-text org
+                    name label underneath has been removed. */}
                 <div className="flex h-32 items-end">
-                  {item.logo && (
-                    <Image
-                      src={item.logo}
-                      alt={item.org}
-                      width={360}
-                      height={120}
-                      className="h-full w-auto object-contain"
-                    />
-                  )}
+                  <Image
+                    src={item.logo}
+                    alt={item.org}
+                    width={360}
+                    height={120}
+                    className="h-full w-auto object-contain"
+                  />
                 </div>
-                {/* Org name — same font, same position, on every card. */}
-                <p
-                  className="mt-3 text-lg font-semibold text-black"
-                  style={{ fontFamily: "var(--font-heading)" }}
-                >
-                  {item.org}
-                </p>
                 <p className="mt-3 text-sm text-zinc-700">{item.summary}</p>
                 <p className="mt-3 text-xs text-zinc-400 italic">
                   {item.note}
