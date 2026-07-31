@@ -24,6 +24,12 @@ export default function Hero() {
               enough to lift legibility without reading as a visible card. */}
           <div className="absolute -inset-x-6 -inset-y-6 -z-10 rounded-3xl bg-white/15 sm:-inset-x-10 sm:-inset-y-8" />
 
+          {/* Small, low-key eyebrow pill — present but not competing
+              with the headline for attention. */}
+          <span className="mb-1 inline-block rounded-full border border-zinc-900/10 bg-white/40 px-3 py-1 text-xs font-medium text-zinc-600">
+            LAAS &middot; An NLB Company &middot; Est. 2000
+          </span>
+
           {/* Headline: two stacked lines, colour change between them —
               matching the reference's structure. */}
           <h1
