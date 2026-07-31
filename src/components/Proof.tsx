@@ -4,6 +4,8 @@ const CASES = [
   {
     org: "Republic Polytechnic",
     logo: "/case-rp.png",
+    logoWidth: 380,
+    logoHeight: 128,
     image: "/case-rp-photo.jpg",
     summary:
       "LAAS took over daily library operations — increasing utilisation and enriching students' learning journeys.",
@@ -12,6 +14,8 @@ const CASES = [
   {
     org: "Temasek Polytechnic",
     logo: "/case-tp.png",
+    logoWidth: 380,
+    logoHeight: 128,
     image: "/case-tp-photo.jpg",
     summary:
       "A robotics solution now automatically finds missing and mis-shelved books across TP's entire collection.",
@@ -20,6 +24,8 @@ const CASES = [
   {
     org: "Records Management Consultancy",
     logo: "/case-records-logo.png",
+    logoWidth: 475,
+    logoHeight: 160,
     image: "/case-records.jpg",
     summary:
       "Government agencies and statutory boards rely on LAAS's methodology to build file plans their staff can actually use.",
@@ -60,8 +66,8 @@ export default function Proof() {
                   <Image
                     src={item.logo}
                     alt={item.org}
-                    width={360}
-                    height={120}
+                    width={item.logoWidth}
+                    height={item.logoHeight}
                     className="h-full w-auto object-contain"
                   />
                 </div>
