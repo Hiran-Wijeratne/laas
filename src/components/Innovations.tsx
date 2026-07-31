@@ -55,14 +55,19 @@ export default function Innovations() {
               key={product.title}
               className="flex flex-col overflow-hidden rounded-lg bg-white shadow-sm"
             >
-              <a href={product.href} className="relative block h-64 w-full">
-                <Image
-                  src={product.image}
-                  alt={product.title}
-                  fill
-                  className="object-cover"
-                />
-              </a>
+              <div className="bg-white p-2">
+                <a
+                  href={product.href}
+                  className="relative block h-64 w-full overflow-hidden rounded-md"
+                >
+                  <Image
+                    src={product.image}
+                    alt={product.title}
+                    fill
+                    className="object-cover"
+                  />
+                </a>
+              </div>
               <div className="flex flex-1 flex-col p-5">
                 <p
                   className="text-lg font-semibold text-zinc-900"

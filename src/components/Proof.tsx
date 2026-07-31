@@ -63,7 +63,10 @@ export default function Proof() {
                   />
                 ) : (
                   <div className="flex h-32 items-end">
-                    <p className="text-lg font-semibold text-brand-blue">
+                    <p
+                      className="text-lg font-semibold text-black"
+                      style={{ fontFamily: "var(--font-heading)" }}
+                    >
                       {item.org}
                     </p>
                   </div>
