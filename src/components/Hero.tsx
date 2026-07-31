@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative isolate flex min-h-screen items-center overflow-hidden">
+    <section className="relative isolate flex min-h-[92vh] items-center overflow-hidden py-20">
       {/* Background photo — single static image now, no rotation. */}
       <Image
         src="/hero.png"
@@ -23,12 +23,6 @@ export default function Hero() {
           {/* Almost-transparent white wash directly behind the text, just
               enough to lift legibility without reading as a visible card. */}
           <div className="absolute -inset-x-6 -inset-y-6 -z-10 rounded-3xl bg-white/15 sm:-inset-x-10 sm:-inset-y-8" />
-
-          {/* Small, low-key eyebrow pill — present but not competing
-              with the headline for attention. */}
-          <span className="mb-1 inline-block rounded-full border border-zinc-900/10 bg-white/40 px-3 py-1 text-xs font-medium text-zinc-600">
-            LAAS &middot; An NLB Company &middot; Est. 2000
-          </span>
 
           {/* Headline: two stacked lines, colour change between them —
               matching the reference's structure. */}

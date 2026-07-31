@@ -130,18 +130,14 @@ export default function ContactSection() {
         {/* Headline: same two-line, colour-split pattern used across the
             page, closing the loop the hero opened. */}
         <h2
-          className="text-center text-2xl leading-tight font-semibold sm:text-3xl"
+          className="text-center text-2xl leading-tight font-semibold sm:text-3xl lg:text-4xl"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           <span className="block text-zinc-900">
-            Let&rsquo;s Make Your Organisation&rsquo;s
+            Planning a New Library or Digitisation Project?
           </span>
-          <span className="block text-brand-blue">Knowledge Easy to Find.</span>
+          <span className="block text-brand-blue">Talk to Our Consultants Today</span>
         </h2>
-        <p className="mx-auto mt-4 max-w-md text-center text-sm text-zinc-600 sm:text-base">
-          Planning, compliance, operations, or technology — tell us what
-          you&rsquo;re trying to solve.
-        </p>
 
         {/* Fields sit in a narrower centred column so each underline rule
             stays a reasonable length instead of stretching the full width

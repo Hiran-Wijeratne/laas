@@ -28,15 +28,6 @@ const PILLARS = [
       "Making your collections searchable and discoverable, in every format.",
     href: "#",
   },
-  {
-    title: "Training",
-    image: "/pillar-training.jpg",
-    alt: "Training",
-    outcome: "Give Your Team the Skills to Do This Themselves.",
-    supporting:
-      "Hands-on courses for librarians, records officers, and archivists.",
-    href: "#",
-  },
 ];
 
 export default function WhatWeDo() {
@@ -47,18 +38,25 @@ export default function WhatWeDo() {
           className="mx-auto max-w-2xl text-center text-2xl leading-tight font-semibold sm:text-3xl lg:text-4xl"
           style={{ fontFamily: "var(--font-heading)" }}
         >
-          <span className="block text-zinc-900">Build. Run. Improve.</span>
-          <span className="block text-brand-blue">All in One Place.</span>
+          <span className="text-zinc-900">Suite of </span>
+          <span className="text-brand-blue">Services</span>
         </h2>
 
-        {/* Four pillar tiles — back to the taller cards, each with the
-            service name as a clear eyebrow label above the outcome line. */}
-        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-zinc-600 sm:text-base">
+          LAAS offers a complete suite of library and archives services. On
+          the library front, LAAS provides consultancy services in the
+          planning and design of new libraries in conjunction with the
+          themes to reach out to the patrons.
+        </p>
+
+        {/* Pillar tiles — same card width as the original four-column
+            layout, now centred as a group of three. */}
+        <div className="mt-10 flex flex-wrap justify-center gap-5">
           {PILLARS.map((pillar) => (
             <a
               key={pillar.title}
               href={pillar.href}
-              className="group relative block aspect-[2/3] overflow-hidden rounded-lg text-left transition-transform duration-300 hover:-translate-y-1"
+              className="group relative block aspect-[2/3] w-full overflow-hidden rounded-lg text-left transition-transform duration-300 hover:-translate-y-1 sm:w-[calc(50%-0.625rem)] lg:w-[calc(25%-0.9375rem)]"
             >
               <Image
                 src={pillar.image}
@@ -82,18 +80,10 @@ export default function WhatWeDo() {
                 <p className="mt-2 text-xs text-zinc-600">
                   {pillar.supporting}
                 </p>
-                <span className="mt-3 inline-block text-sm font-semibold text-brand-blue underline underline-offset-2">
-                  Learn More →
-                </span>
               </div>
             </a>
           ))}
         </div>
-
-        <p className="mt-10 text-center text-sm text-zinc-600">
-          Every one of these is backed by technology already proven inside
-          Singapore&rsquo;s own libraries — see how ↓
-        </p>
       </div>
     </section>
   );

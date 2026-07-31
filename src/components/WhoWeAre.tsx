@@ -10,55 +10,34 @@ export default function WhoWeAre() {
             className="text-2xl leading-tight font-semibold text-zinc-900 sm:text-3xl lg:text-4xl"
             style={{ fontFamily: "var(--font-heading)" }}
           >
-            Not a Vendor Claiming Library Expertise.{" "}
-            <span className="text-brand-blue">The Source of It.</span>
+            Who We Are
           </h2>
 
           <p className="mt-5 text-sm text-zinc-700 sm:text-base">
-            Every organisation can benefit from the expertise behind
-            Singapore&rsquo;s National Library Board. That&rsquo;s why LAAS
-            exists — as NLB&rsquo;s own corporate arm, sharing its proven
-            methodology and technology beyond NLB itself. You&rsquo;re not
-            hiring a consultant guessing at what works. You&rsquo;re getting
-            the real thing.
+            A wholly-owned company of the National Library
+            <br />
+            Board Singapore (NLB), LAAS is the NLB&rsquo;s
+            <br />
+            corporate arm to market NLB&rsquo;s library&rsquo;s and
+            <br />
+            archives&rsquo; expertise, products and services to local
+            <br />
+            and overseas organisations.
           </p>
 
           <p className="mt-4 text-sm text-zinc-700 sm:text-base">
-            NLB runs a network of 28 libraries across Singapore — plus the
-            National Library and the National Archives of Singapore —
-            lending more than 38.8 million items a year. It&rsquo;s a scale
-            and a model that other national library systems visit Singapore
-            to study. That&rsquo;s the expertise LAAS makes available to
-            you.
+            LAAS also has a team of highly qualified
+            <br />
+            librarians and staff who run and operate libraries
+            <br />
+            for its clients. Information does not add much
+            <br />
+            value if they are not discoverable. LAAS employs
+            <br />
+            innovative use of technologies to make information searchable
+            <br />
+            and discoverable across different formats.
           </p>
-
-          {/* Glance-able proof pair, consistent with the Trust Bar's
-              stat-number treatment. */}
-          <div className="mt-8 flex gap-10">
-            <div>
-              <p className="text-2xl font-semibold text-brand-blue sm:text-3xl">
-                28
-              </p>
-              <p className="mt-1 text-xs text-zinc-500 sm:text-sm">
-                Libraries in NLB&rsquo;s network
-              </p>
-            </div>
-            <div>
-              <p className="text-2xl font-semibold text-brand-blue sm:text-3xl">
-                38.8M+
-              </p>
-              <p className="mt-1 text-xs text-zinc-500 sm:text-sm">
-                Items loaned a year
-              </p>
-            </div>
-          </div>
-
-          <a
-            href="#"
-            className="mt-8 inline-block text-sm font-semibold text-brand-blue hover:underline"
-          >
-            Learn About Our Governance →
-          </a>
         </div>
 
         {/* Photo side */}

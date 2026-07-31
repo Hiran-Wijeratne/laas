@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Problem from "@/components/Problem";
 import WhatWeDo from "@/components/WhatWeDo";
+import TrainingCourses from "@/components/TrainingCourses";
 import TrustBar from "@/components/TrustBar";
 import WhoWeAre from "@/components/WhoWeAre";
 import Innovations from "@/components/Innovations";
@@ -15,8 +15,8 @@ export default function Home() {
     <main className="relative flex flex-1 flex-col">
       <Header />
       <Hero />
-      <Problem />
       <WhatWeDo />
+      <TrainingCourses />
       <TrustBar />
       <WhoWeAre />
       <Innovations />

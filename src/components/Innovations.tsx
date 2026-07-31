@@ -39,10 +39,8 @@ export default function Innovations() {
           className="text-2xl leading-tight font-semibold sm:text-3xl lg:text-4xl"
           style={{ fontFamily: "var(--font-heading)" }}
         >
-          <span className="block text-zinc-900">Technology Proven Inside</span>
-          <span className="block text-brand-blue">
-            Singapore&rsquo;s Own Libraries First.
-          </span>
+          <span className="text-zinc-900">Innovations for </span>
+          <span className="text-brand-blue">Libraries</span>
         </h2>
 
         {/* White floating cards on the light blue wash, image on top,
