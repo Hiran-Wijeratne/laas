@@ -18,7 +18,7 @@ export default function Hero() {
       {/* Text sits directly on the photo, centered, no card/scrim behind it,
           near the top of the viewport per team feedback (pill removed,
           top space shortened). */}
-      <div className="relative mx-auto w-full max-w-7xl px-6 pt-24 text-center sm:px-10 sm:pt-28">
+      <div className="relative mx-auto w-full max-w-7xl px-6 pt-32 text-center sm:px-10 sm:pt-36">
         <div className="relative mx-auto max-w-3xl">
           {/* Almost-transparent white wash directly behind the text, just
               enough to lift legibility without reading as a visible card. */}
