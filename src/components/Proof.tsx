@@ -62,9 +62,11 @@ export default function Proof() {
                     className="h-32 w-auto object-contain"
                   />
                 ) : (
-                  <p className="text-sm font-semibold text-brand-blue">
-                    {item.org}
-                  </p>
+                  <div className="flex h-32 items-end">
+                    <p className="text-lg font-semibold text-brand-blue">
+                      {item.org}
+                    </p>
+                  </div>
                 )}
                 <p className="mt-3 text-sm text-zinc-700">{item.summary}</p>
                 <p className="mt-3 text-xs text-zinc-400 italic">
