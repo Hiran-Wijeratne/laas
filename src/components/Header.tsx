@@ -38,12 +38,12 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Contact Us CTA — same style as the hero's primary CTA */}
+        {/* Client Login CTA — brand blue per manager's request */}
         <a
-          href="#contact"
-          className="rounded-lg bg-brand-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand-orange/90"
+          href="#"
+          className="rounded-lg bg-brand-blue px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand-blue/90"
         >
-          Contact Us
+          Client Login
         </a>
       </div>
     </header>

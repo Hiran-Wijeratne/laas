@@ -4,88 +4,83 @@ const PRODUCTS = [
   {
     title: "OneSearch",
     image: "/product-onesearch.jpg",
-    teaser: "Help every user find what they need, in one search.",
-    detail:
-      "OneSearch gives users a single interface to everything your library holds, even when it lives on different platforms and systems — the catalogue, born-digital and digitised materials, commercial databases, and eBooks. A single sign-on means users no longer need to know which platform holds what they're looking for; results are automatically grouped by type and source, saving time on every search.",
+    description:
+      "OneSearch seamlessly provides access via a single user interface to all of a library's resources even if such resources may reside in different platforms and different locations. Such resources include the library's catalogue, born-digital and digitised materials of various formats, commercial databases and eBooks.",
     href: "#",
   },
   {
     title: "Online Browsing",
     image: "/product-onlinebrowsing.jpg",
-    teaser: "Let patrons discover your shelves, anytime, anywhere.",
-    detail:
-      "Online Browsing lets patrons explore your physical library virtually, any time. They can discover new arrivals and returns by subject, then see a book's exact location on a digital map of the library — and browse the shelves around it to find related titles, all before ever stepping through the door.",
+    description:
+      "Enable Library users to search and browse the physical library virtually 24 by 7. As users search and browse the library online, they will discover the books by subject categories and obtain the exact location of the books on a digital map of the library.",
     href: "#",
   },
   {
     title: "Mobile Borrowing App",
     image: "/product-mobileapp.jpg",
-    teaser: "Turn borrowing into a 10-second task.",
-    detail:
-      "Patrons open the app, scan a book's barcode, and walk straight through the library's security gates — no borrowing kiosks, no queues. It's built to save time for patrons and staff alike while cutting the operational cost of running checkout infrastructure.",
+    description:
+      "Open an app from your mobile phone, scan the book's barcode and walk through the security gates. It's that simple to borrow books from the Library, anywhere in the library.",
     href: "#",
   },
   {
     title: "Library Stock Tracking",
     image: "/product-stocktracking.jpg",
-    teaser: "Stop losing hours to missing books.",
-    detail:
-      "A robotics unit patrols the library, cross-referencing what it finds against the Library Management System to automatically report the exact floor, shelf, bay, and tier of every misplaced or mis-shelved item — turning hours of manual searching into a routine, automated report.",
+    description:
+      "Robotics solution that met the library's need to automate the library's stock tracking of missing books and mis-shelved books. The robot, Library Stocks Tracking System, and Library Management System all interact to automatically generate reports about the physical locations of books for the entire library collection.",
     href: "#",
   },
 ];
 
 export default function Innovations() {
   return (
-    <section className="bg-brand-blue-tint px-6 py-16 sm:px-10 sm:py-20">
+    <section className="bg-brand-blue-tint px-6 pt-16 pb-20 sm:px-10 sm:pt-20 sm:pb-24">
       <div className="mx-auto max-w-7xl text-center">
-        <h2
-          className="text-2xl leading-tight font-semibold text-zinc-900 sm:text-3xl lg:text-4xl"
-          style={{ fontFamily: "var(--font-heading)" }}
-        >
-          Technology Proven Inside Singapore&rsquo;s Own Libraries First.
+        {/* Two-tone heading, matching the live site's bold-then-light
+            weight contrast, recoloured for the light background. */}
+        <h2 style={{ fontFamily: "var(--font-heading)" }}>
+          <span className="block text-2xl font-bold text-zinc-900 sm:text-3xl lg:text-4xl">
+            Innovations for
+          </span>
+          <span className="block text-3xl font-light text-brand-blue sm:text-4xl lg:text-5xl">
+            Libraries
+          </span>
         </h2>
-        <p className="mt-3 text-sm font-medium text-zinc-500">
-          Built for one reason: to make knowledge findable.
-        </p>
 
-        {/* Same taller-card, text-on-photo pattern as the "What We Do"
-            pillars, reused here for the product suite. */}
-        <div className="mt-10 grid grid-cols-1 gap-5 text-left sm:grid-cols-2 lg:grid-cols-4">
+        {/* White floating cards on the light blue wash, image on top,
+            title and description below — matching the live site's actual
+            Innovations for Libraries layout. */}
+        <div className="mt-12 grid grid-cols-1 gap-6 text-left sm:grid-cols-2 lg:grid-cols-4">
           {PRODUCTS.map((product) => (
-            <a
+            <div
               key={product.title}
-              href={product.href}
-              className="group relative block aspect-[2/3] overflow-hidden rounded-lg transition-transform duration-300 hover:-translate-y-1"
+              className="flex flex-col overflow-hidden rounded-lg bg-white shadow-sm"
             >
-              <Image
-                src={product.image}
-                alt={product.title}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div
-                className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-zinc-900/80 via-zinc-900/30 to-transparent"
-                aria-hidden
-              />
-              <div className="absolute inset-x-0 bottom-0 p-5">
+              <a href={product.href} className="relative block h-44 w-full">
+                <Image
+                  src={product.image}
+                  alt={product.title}
+                  fill
+                  className="object-cover"
+                />
+              </a>
+              <div className="flex flex-1 flex-col p-5">
                 <p
-                  className="text-xl leading-tight font-semibold text-white sm:text-2xl"
+                  className="text-lg font-semibold text-zinc-900"
                   style={{ fontFamily: "var(--font-heading)" }}
                 >
                   {product.title}
                 </p>
-                <p className="mt-2 text-sm font-medium text-white/90">
-                  {product.teaser}
+                <p className="mt-2 flex-1 text-sm text-zinc-600">
+                  {product.description}
                 </p>
-                <p className="mt-2 line-clamp-4 text-xs text-white/75">
-                  {product.detail}
-                </p>
-                <span className="mt-3 inline-block text-xs font-semibold text-white underline underline-offset-2">
-                  Learn More
-                </span>
+                <a
+                  href={product.href}
+                  className="mt-4 inline-block text-sm font-semibold text-brand-orange hover:underline"
+                >
+                  Read More
+                </a>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
